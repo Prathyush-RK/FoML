@@ -6,10 +6,8 @@ from sklearn.metrics import silhouette_score
 # Load dataset
 df = pd.read_csv("kmeans-dataset.csv")
 
-# Select Annual Income and Spending Score columns
 X = df.iloc[:, [3, 4]].values
 
-# Compute silhouette scores for different values of k
 silhouette_scores = []
 
 for k in range(2, 11):

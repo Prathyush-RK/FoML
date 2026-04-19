@@ -19,7 +19,7 @@ def sigmoid(x):
 def sigmoid_derivative(x):
     return x*(1-x)
 
-# Initialize weights randomly
+# Initialize weights
 np.random.seed(1)
 
 input_layer_neurons = 2
